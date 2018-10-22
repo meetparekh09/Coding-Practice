@@ -2,10 +2,17 @@
     var b = a * 2;
     var c = 3;
 
-    function bar(str, c) {
-        eval(str);
+    function bar(c) {
         console.log(a, b, c);
     }
 
-    bar("var b = 2", b * 3);
+    bar(b * 3);
 })(2);
+
+
+{
+    let a = 4;
+    console.log(a);
+}
+
+// console.log(a); // Reference error
