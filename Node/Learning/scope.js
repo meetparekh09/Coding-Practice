@@ -1,4 +1,4 @@
-function foo(a) {
+(function foo(a) {
     var b = a * 2;
     var c = 3;
 
@@ -8,6 +8,4 @@ function foo(a) {
     }
 
     bar("var b = 2", b * 3);
-}
-
-foo(2);
+})(2);
