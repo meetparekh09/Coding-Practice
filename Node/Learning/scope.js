@@ -1,3 +1,5 @@
+"use strict";
+
 (function foo(a) {
     var b = a * 2;
     var c = 3;
@@ -16,3 +18,17 @@
 }
 
 // console.log(a); // Reference error
+
+
+for(var i = 0; i < 3; i++) {
+    console.log(i);
+}
+
+console.log(i); //not a reference error
+
+
+for(let j = 0; j < 3; j++) {
+    console.log(j);
+}
+
+// console.log(j); // Reference error
