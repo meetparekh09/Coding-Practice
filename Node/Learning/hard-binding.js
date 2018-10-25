@@ -7,13 +7,13 @@ var obj = {
     a: 3
 };
 
-function bind(fn, obj) {
-    return function() {
-        fn.call(obj, arguments);
-    };
-}
+// function bind(fn, obj) {
+//     return function() {
+//         fn.apply(obj, arguments);
+//     };
+// }
 
-var bar = bind(foo, obj);
+var bar = foo.bind(obj);
 
 bar(3);
 setTimeout(bar(5), 100);
