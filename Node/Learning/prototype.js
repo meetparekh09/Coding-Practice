@@ -17,3 +17,16 @@ for(var k in anotherObject) {
 }
 
 console.log(("a" in anotherObject));
+
+
+console.log(anotherObject.hasOwnProperty("a"));
+console.log(myObject.isPrototypeOf(anotherObject));
+
+
+//Shadowing
+
+anotherObject.a++;
+
+console.log("\n\n");
+console.log(myObject.a);
+console.log(anotherObject.a);
